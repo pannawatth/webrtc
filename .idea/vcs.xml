@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/_gclient_ios_xcjtljt5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/_gclient_third_party_4btvuw6u" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/_gclient_tools_xzemf7kq" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/base" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/build" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/buildtools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/buildtools/clang_format/script" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/buildtools/third_party/libc++/trunk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/buildtools/third_party/libc++abi/trunk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/buildtools/third_party/libunwind/trunk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/ios" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/testing" vcs="Git" />
+  </component>
+</project>
