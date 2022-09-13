@@ -143,7 +143,8 @@ const int64_t kNanosecondsPerSecond = 1000000000;
 - (void)startCaptureWithDevice:(AVCaptureDevice *)device
                         format:(AVCaptureDeviceFormat *)format
                            fps:(NSInteger)fps {
-  NSLog(@"start capturer is called from inside webrtc sdk1 !!!!");
+  RTCLogInfo("start capturer is called from inside webrtc sdk1555 !!!!");
+  NSLog(@"start capturer is called from inside webrtc sdk1555 !!!!");
   [self startCaptureWithDevice:device format:format fps:fps completionHandler:nil];
 }
 
