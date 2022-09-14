@@ -76,8 +76,9 @@ static webrtc::ObjCVideoTrackSource *getObjCVideoSource(
 
 - (void)capturer:(RTC_OBJC_TYPE(RTCVideoCapturer) *)capturer
     didCaptureVideoFrame:(RTC_OBJC_TYPE(RTCVideoFrame) *)frame {
-  RTCLog(@"capturer with frame is called from inside webrtc sdk 555 !!!!");
-  getObjCVideoSource(_nativeVideoSource)->OnCapturedFrame(frame);
+  NSLog(@"nslog capturer with frame is called from inside webrtc sdk 555 !!!!");
+  printf("printf capturer with frame is called from inside webrtc sdk 555 !!!!");
+  //getObjCVideoSource(_nativeVideoSource)->OnCapturedFrame(frame);
 }
 
 - (void)adaptOutputFormatToWidth:(int)width height:(int)height fps:(int)fps {
