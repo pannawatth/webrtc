@@ -143,8 +143,6 @@ const int64_t kNanosecondsPerSecond = 1000000000;
 - (void)startCaptureWithDevice:(AVCaptureDevice *)device
                         format:(AVCaptureDeviceFormat *)format
                            fps:(NSInteger)fps {
-  RTCLogInfo("start capturer is called from inside webrtc sdk1555 !!!!");
-  NSLog(@"start capturer is called from inside webrtc sdk1555 !!!!");
   [self startCaptureWithDevice:device format:format fps:fps completionHandler:nil];
 }
 
@@ -161,8 +159,6 @@ const int64_t kNanosecondsPerSecond = 1000000000;
       dispatchAsyncOnType:RTCDispatcherTypeCaptureSession
                     block:^{
                       RTCLogInfo("startCaptureWithDevice %@ @ %ld fps", format, (long)fps);
-RTCLogInfo("start capturer is called from inside webrtc sdk555 !!!!");
-NSLog(@"start capturer is called from inside webrtc sdk555 !!!!");
 #if TARGET_OS_IPHONE
                       dispatch_async(dispatch_get_main_queue(), ^{
                         if (!self->_generatingOrientationNotifications) {
