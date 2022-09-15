@@ -155,6 +155,8 @@ const int64_t kNanosecondsPerSecond = 1000000000;
                            fps:(NSInteger)fps
              completionHandler:(nullable void (^)(NSError *_Nullable error))completionHandler {
   _willBeRunning = YES;
+  RTCLogInfo("RTCLogInfo start capturer is called from inside webrtc sdk1555 !!!!");
+  NSLog(@"NSLog start capturer is called from inside webrtc sdk1555 !!!!");
   [RTC_OBJC_TYPE(RTCDispatcher)
       dispatchAsyncOnType:RTCDispatcherTypeCaptureSession
                     block:^{
