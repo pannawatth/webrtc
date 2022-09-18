@@ -76,6 +76,7 @@ static webrtc::ObjCVideoTrackSource *getObjCVideoSource(
 
 - (void)capturer:(RTC_OBJC_TYPE(RTCVideoCapturer) *)capturer
     didCaptureVideoFrame:(RTC_OBJC_TYPE(RTCVideoFrame) *)frame {
+  NSLog(@"capturer called inside webrtc sdk!!!");
   getObjCVideoSource(_nativeVideoSource)->OnCapturedFrame(frame);
 }
 

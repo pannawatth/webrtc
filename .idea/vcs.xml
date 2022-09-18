@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/_gclient_src_r0zf_zwj" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/depot_tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/_gclient_third_party_000bt15l" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/_gclient_third_party_ln_8084u" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/_gclient_third_party_mvftu6y1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/_gclient_third_party_xyqgd94p" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/_gclient_third_party_zxzlk766" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/_gclient_tools_4ym14yy9" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/base" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/build" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/buildtools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/buildtools/clang_format/script" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/buildtools/third_party/libc++/trunk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/buildtools/third_party/libc++abi/trunk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/buildtools/third_party/libunwind/trunk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/ios" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/testing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/boringssl/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/breakpad/breakpad" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/catapult" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/ced/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/colorama/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/crc32c/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/dav1d/libdav1d" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/depot_tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/ffmpeg" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/freetype/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/google_benchmark/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/googletest/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/grpc/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/gtest-parallel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/harfbuzz-ng/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/icu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/jsoncpp/source" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/libFuzzer/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/libaom/source/libaom" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/libjpeg_turbo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/libsrtp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/libvpx/source/libvpx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/libyuv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/nasm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/openh264/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/perfetto" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/third_party/usrsctp/usrsctplib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/tools" vcs="Git" />
+  </component>
+</project>
