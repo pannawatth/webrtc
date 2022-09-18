@@ -154,7 +154,6 @@ const int64_t kNanosecondsPerSecond = 1000000000;
                         format:(AVCaptureDeviceFormat *)format
                            fps:(NSInteger)fps
              completionHandler:(nullable void (^)(NSError *_Nullable error))completionHandler {
-  NSLog(@"startCaptureWithDevice called inside webrtc sdk!!");
   _willBeRunning = YES;
   [RTC_OBJC_TYPE(RTCDispatcher)
       dispatchAsyncOnType:RTCDispatcherTypeCaptureSession
