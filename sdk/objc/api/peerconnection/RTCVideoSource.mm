@@ -26,6 +26,7 @@ static webrtc::ObjCVideoTrackSource *getObjCVideoSource(
 // info.
 @implementation RTC_OBJC_TYPE (RTCVideoSource) {
   rtc::scoped_refptr<webrtc::VideoTrackSourceInterface> _nativeVideoSource;
+  RTCVideoFrame* (^_handlerFrameCallback) (RTCVideoFrame *frame);
 }
 
 - (instancetype)initWithFactory:(RTC_OBJC_TYPE(RTCPeerConnectionFactory) *)factory
@@ -37,6 +38,7 @@ static webrtc::ObjCVideoTrackSource *getObjCVideoSource(
                   nativeMediaSource:nativeVideoSource
                                type:RTCMediaSourceTypeVideo]) {
     _nativeVideoSource = nativeVideoSource;
+    _handlerFrameCallback = nil;
   }
   return self;
 }
@@ -76,11 +78,24 @@ static webrtc::ObjCVideoTrackSource *getObjCVideoSource(
 
 - (void)capturer:(RTC_OBJC_TYPE(RTCVideoCapturer) *)capturer
     didCaptureVideoFrame:(RTC_OBJC_TYPE(RTCVideoFrame) *)frame {
-  getObjCVideoSource(_nativeVideoSource)->OnCapturedFrame(frame);
+  NSLog(@"capturer called !!!");
+  if(_handlerFrameCallback != nil){
+    NSLog(@"_handlerFrameCallback is not nil");
+    RTCVideoFrame* editedFrame = _handlerFrameCallback(frame);
+    getObjCVideoSource(_nativeVideoSource)->OnCapturedFrame(editedFrame);
+  }
+  else{
+    NSLog(@"_handlerFrameCallback is nil");
+    getObjCVideoSource(_nativeVideoSource)->OnCapturedFrame(frame);
+  }
 }
 
 - (void)adaptOutputFormatToWidth:(int)width height:(int)height fps:(int)fps {
   getObjCVideoSource(_nativeVideoSource)->OnOutputFormatRequest(width, height, fps);
+}
+
+- (void)setHandlerFrameCallbackCallback:(RTCVideoFrame* (^)(RTCVideoFrame *frame)) callback{
+    _handlerFrameCallback = callback;
 }
 
 #pragma mark - Private

@@ -32,6 +32,8 @@ RTC_OBJC_EXPORT
  */
 - (void)adaptOutputFormatToWidth:(int)width height:(int)height fps:(int)fps;
 
+- (void)setHandlerFrameCallbackCallback:(RTCVideoFrame* (^)(RTCVideoFrame *frame)) callback;
+
 @end
 
 NS_ASSUME_NONNULL_END
