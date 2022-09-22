@@ -78,14 +78,11 @@ static webrtc::ObjCVideoTrackSource *getObjCVideoSource(
 
 - (void)capturer:(RTC_OBJC_TYPE(RTCVideoCapturer) *)capturer
     didCaptureVideoFrame:(RTC_OBJC_TYPE(RTCVideoFrame) *)frame {
-  NSLog(@"capturer called !!!");
   if(_handlerFrameCallback != nil){
-    NSLog(@"_handlerFrameCallback is not nil");
     RTCVideoFrame* editedFrame = _handlerFrameCallback(frame);
     getObjCVideoSource(_nativeVideoSource)->OnCapturedFrame(editedFrame);
   }
   else{
-    NSLog(@"_handlerFrameCallback is nil");
     getObjCVideoSource(_nativeVideoSource)->OnCapturedFrame(frame);
   }
 }
